@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .sideBar{
+        @apply fixed flex flex-col bg-indigo-300 h-screen w-72 top-0 -left-full overflow-y-auto content-center transition-all duration-500 ease-in
+    }
+    .sideBar-active{
+        @apply fixed flex flex-col bg-indigo-300 h-screen w-72 top-0 left-0 overflow-y-auto content-center transition-all duration-300 ease-out
+    }
+    .sideBar-item{
+        @apply flex h-9 w-72 content-center justify-center items-center
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+    @variants responsive {
+        .masonry {
+            column-gap: 1.5em;
+            column-count: 1;
+        }
+        .masonry-sm {
+            column-gap: 1.5em;
+            column-count: 2;
+        }
+        .masonry-md {
+            column-gap: 1.5em;
+            column-count: 3;
+        }
+    }
+}
+
+.sliderWrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sliderWrap .btnClose, .sliderWrap .btnPrev, .sliderWrap .btnNext {
+  position: fixed;
+  cursor: pointer;
+  opacity: 0.6;
+  color: #fff;
+  z-index: 9999;
+}
+
+.btnNext:hover, .btnPrev:hover, .btnClose:hover {
+  opacity: 1;
+}
+
+.sliderWrap .btnClose {
+  top: 40px;
+  right: 40px;
+}
+
+.sliderWrap .btnPrev {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+
+.sliderWrap .btnNext {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+
+.fullScreenImage {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullScreenImage img {
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
 }

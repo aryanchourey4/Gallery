@@ -1,98 +1,83 @@
 export const sideBarData2022 = [
     {
         title: 'Event 1',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 0
     },
     {
         title: 'Event 2',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 1
     },
     {
         title: 'Event 3',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 2
     },
     {
         title: 'Event 4',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 3
     },
     {
         title: 'Event 5',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 4
     },
     {
         title: 'Event 6',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 5
     }
 ]
 
 export const sideBarData2021 = [
     {
         title: 'Event 1',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 0
     },
     {
         title: 'Event 2',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 1
     },
     {
         title: 'Event 3',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 2
     },
     {
         title: 'Event 4',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 3
     },
     {
         title: 'Event 5',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 4
     }
 ]
 
 export const sideBarData2020 = [
     {
         title: 'Event 1',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 0
     },
     {
         title: 'Event 2',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 1
     },
     {
         title: 'Event 3',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 2
     },
     {
         title: 'Event 4',
-        path: 'images',
-        cName: 'sideBar-item'
+        eventValue: 3
     }
 ]
 
 export const sideBarDataYears = [
     {
         title: '2022',
-        cName: 'sideBar-item'
+        yearValue: 2
     },
     {
         title: '2021',
-        cName: 'sideBar-item'
+        yearValue: 1
     },
     {
         title: '2020',
-        cName: 'sideBar-item'
+        yearValue: 0
     }
 ]

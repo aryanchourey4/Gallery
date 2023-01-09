@@ -12,7 +12,7 @@ export default function ImageDisplay() {
     const dispatch = useDispatch();
     const yearsList = [images2022];
     const [slideNumber, setSlideNumber] = useState(0);
-    const [openModal, setOpenModal] = useState(true);
+    const [openModal, setOpenModal] = useState(false);
 
     const handleOpenModal = (index) => {
         setSlideNumber(index);
@@ -34,8 +34,8 @@ export default function ImageDisplay() {
             ? setSlideNumber(0)
             : setSlideNumber(slideNumber + 1);
     };
-
-    return (
+    if (yearsList[year][event].images.length===0) return(<div className="flex items-center flex-col"><p>No Images Available</p></div>)
+    else return (
         <>
             <div className="flex items-center flex-col">
                 <h1>{yearsList[year][event].title}</h1>

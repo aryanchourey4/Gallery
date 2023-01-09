@@ -21,4 +21,80 @@ export const images2022 = [
             "/Images/2022/Event1/wolfgang-hasselmann-Key6vvOlNvA-unsplash.jpg"
         ],
     },
+    {
+        title: "2022 Event 2 Name",
+        desc: "Random Stuff for 2022 Event 2",
+        images: [],
+    },
+    {
+        title: "2022 Event 3 Name",
+        desc: "Random Stuff for 2022 Event 3",
+        images: [],
+    },
+    {
+        title: "2022 Event 4 Name",
+        desc: "Random Stuff for 2022 Event 4",
+        images: [],
+    },
+    {
+        title: "2022 Event 5 Name",
+        desc: "Random Stuff for 2022 Event 5",
+        images: [],
+    },
+    {
+        title: "2022 Event 1 Name",
+        desc: "Random Stuff for 2022 Event 6",
+        images: [],
+    },
+];
+
+export const images2021 = [
+    {
+        title: "2021 Event 1 Name",
+        desc: "Random Stuff for 2021 Event 1",
+        images: [],
+    },
+    {
+        title: "2021 Event 2 Name",
+        desc: "Random Stuff for 2021 Event 2",
+        images: [],
+    },
+    {
+        title: "2021 Event 3 Name",
+        desc: "Random Stuff for 2021 Event 3",
+        images: [],
+    },
+    {
+        title: "2021 Event 4 Name",
+        desc: "Random Stuff for 2021 Event 4",
+        images: [],
+    },
+    {
+        title: "2021 Event 5 Name",
+        desc: "Random Stuff for 2021 Event 5",
+        images: [],
+    },
+];
+
+export const images2020 = [
+    {
+        title: "2020 Event 1 Name",
+        desc: "Random Stuff for 2020 Event 1",
+        images: [],
+    },
+    {
+        title: "2020 Event 2 Name",
+        desc: "Random Stuff for 2020 Event 2",
+        images: [],
+    },
+    {
+        title: "2020 Event 3 Name",
+        desc: "Random Stuff for 2020 Event 3",
+        images: [],
+    },
+    {
+        title: "2020 Event 4 Name",
+        desc: "Random Stuff for 2020 Event 4",
+        images: [],
+    },
 ];

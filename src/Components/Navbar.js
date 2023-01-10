@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+// import { Link } from "react-router-dom";
 import * as VscIcons from "react-icons/vsc";
 import { IconContext } from "react-icons";
 import { useSelector, useDispatch } from "react-redux";
@@ -50,8 +50,8 @@ export default function Navbar() {
           <nav className={SideBarView ? 'sideBar-active' : 'sideBar'}>
             <ul>
               <li className='flex bg-indigo-500 h-12 w-72 justify-between items-center'>
-                <VscIcons.VscArrowLeft className='opacity-0' />
-                <span>YEARS</span>
+              <VscIcons.VscArrowLeft onClick={() => {dispatch(viewSideBar());dispatch(changeSideBar());dispatch(viewSideBar())}} />
+                <span>EVENTS</span>
                 <VscIcons.VscClose onClick={()=>dispatch(viewSideBar())} />
               </li>
               <IconContext.Provider value={{ className: "h-9 w-9 p-2 hover:bg-yellow-500" }}>

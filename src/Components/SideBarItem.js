@@ -17,11 +17,11 @@ export default function SideBarItem(props) {
                     <Link to="/" className="flex justify-center items-center h-9 w-[87.5%]  hover:bg-yellow-500">
                         <span>{props.title}</span>
                     </Link>
-                    <VscIcons.VscChevronRight onClick={() => {dispatch(changeYear(props.yearValue),viewSideBar())}} />
+                    <VscIcons.VscChevronRight onClick={() => {dispatch(viewSideBar());dispatch(changeYear(props.yearValue));dispatch(changeSideBar());dispatch(viewSideBar())}} />
                 </li>
             </>
         );
-    else
+    else 
         return (
             <>
                 <Link className="flex items-center" to="/">
